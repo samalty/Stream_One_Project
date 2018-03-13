@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Blasé Music Club home page</title>
+		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/Bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Contrail+One|Fjalla+One|Francois+One|Indie+Flower|Rammetto+One|Roboto+Mono|VT323" rel="stylesheet">
+		<script src="C:/Users/Sam/Stream_One_Project/jQuery/js/jquery-3.2.1.js"></script>
+		<script src="C:/Users/Sam/Stream_One_Project/Bootstrap/js/bootstrap.js"></script>
+		<style>
+			footer{
+				padding-top: 10px;
+				background-color: #bac9e2;
+				text-align: center;
+				height: 100px;
+				width: 100%;
+			}
+			.jumbotron{
+				background-image: url("../Images/gallery9.jpg");
+				background-size: cover;
+				color: white;
+				height: 400px;
+			}
+			.fa{
+				padding: 20px;
+				font-size: 35px;
+				width: 70px;
+				text-align: center;
+				text-decoration: none;
+				border-radius: 30%;
+			}
+			.fa-facebook{
+				background: #3B5998;
+				color: white;
+			}
+			.fa-instagram{
+				background: #E03A77;
+				color: white;
+			}
+			.fa-twitter{
+				background: #55ACEE;
+				color: white;
+			}
+			.fa-hover{
+				opacity: 0.6;
+			}
+			h1{
+				font-family: Contrail One, cursive;
+			}
+			p{
+				font-family: Contrail One, cursive;
+  				font-size: 20px;
+			}
+			a{
+				font-family: Contrail One, cursive;
+  				font-size: 20px;
+			}
+			.navbar-brand{
+				font-family: VT323, monospace;
+  				font-size: 40px;
+			}
+
+			/* CSS for image gallery */
+
+			img{
+				margin: 10px;
+				cursor: pointer;
+			}
+			.modal{
+				display: none;
+				position: fixed;
+				z-index: 1;
+				padding-top: 100px;
+				left: 0;
+				top: 0;
+				width:100%;
+				height:100%;
+				overflow: auto;
+				background-color: rgba(0,0,0,0.8);
+			}
+			.modal-content{
+				position: relative;
+				background-color: black;
+				margin: auto;
+				display: block;
+				width: 80%;
+				max-width: 1000px;
+			}
+			.close{
+				position: absolute;
+				top: 10px;
+				right: 25px;
+				color: white;
+				font-size: 30px;
+			}
+			.mySlides{
+				display: none;
+			}
+			.prev,
+			.next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%
+				width: auto;
+				padding: 15px;
+				margin-top: -40px;
+				color: white;
+				font-size: 20px;
+				transition: 0.8s;
+				border-radius: 3px;
+			}
+			.next{
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+			.numbertext{
+				color: white;
+				font-size: 10px;
+				padding: 10px;
+				position: absolute;
+				top: 0;
+			}
+			.caption-container{
+				text-align: center;
+				background-color: black;
+				padding: 2px 16px;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+			<div class="nav navbar-header">
+				<a class="navbar-brand" href="home.html">Blasé Music Club</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="#">Tell me more</a></li>
+				<li><a href="#">Media</a></li>
+				<li><a href="events.html">Upcoming events</a></li>
+				<li><a href="contact.html">Get in touch</a></li>
+			</ul>
+			</div>
+		</nav>
+		<hr>
+		<div class="jumbotron">
+			<div class="container">
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1>Media</h1>
+					<p>Check out some of the footage from our most recent event, the London launch party for ENGINE's album 'Cucumber Water', which also saw performances from The Big Wheel, Digital Selves, and Athos.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+
+					<nav>
+						<ul class="nav nav-pills nav-justified">
+							<li class="active"><a data-toggle="pill" href="#photos">Photos</a></li>
+							<li><a data-toggle="pill" href="#video">Videos</a></li>
+						</ul>
+						<div class="tab-content">
+							<div id="photos" class="tab-pane fade in active">
+								<div id="image_wrapper">
+									<img src="../Images/gallery1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="gallery1" width="350" height="230" />
+									<img src="../Images/gallery2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="gallery2" width="350" height="230" />
+									<img src="../Images/gallery3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="gallery3" width="350" height="230" />
+									<img src="../Images/gallery4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="gallery4" width="350" height="230" />
+									<img src="../Images/gallery5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="gallery5" width="350" height="230" />
+									<img src="../Images/gallery6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="gallery6" width="350" height="230" />
+									<img src="../Images/gallery7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="gallery7" width="350" height="230" />
+									<img src="../Images/gallery8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="gallery8" width="350" height="230" />
+									<img src="../Images/gallery9.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="gallery9" width="350" height="230" />
+								</div>
+
+								<div id="modal1" class="modal">
+									<span class="close" onclick="closeModal()">&times;</span>
+									<div class="modal-content">
+
+										<div class="mySlides">
+											<div class="numbertext">1/9</div>
+											<img src="../Images/gallery1.jpg" style="width:80%">
+										</div>
+										<div class="mySlides">
+											<div class="numbertext">2/9</div>
+											<img src="../Images/gallery2.jpg" style="width:80%">
+										</div>
+										<div class="mySlides">
+											<div class="numbertext">3/9</div>
+											<img src="../Images/gallery3.jpg" style="width:80%">
+										</div>
+										<div class="mySlides">
+											<div class="numbertext">4/9</div>
+											<img src="../Images/gallery4.jpg" style="width:80%">
+										</div>
+										<div class="mySlides">
+											<div class="numbertext">5/9</div>
+											<img src="../Images/gallery5.jpg" style="width:80%">
+										</div>
+										<div class="mySlides">
+											<div class="numbertext">6/9</div>
+											<img src="../Images/gallery6.jpg" style="width:80%">
+										</div>
+										<div class="mySlides">
+											<div class="numbertext">7/9</div>
+											<img src="../Images/gallery7.jpg" style="width:80%">
+										</div>
+										<div class="mySlides">
+											<div class="numbertext">8/9</div>
+											<img src="../Images/gallery8.jpg" style="width:80%">
+										</div>
+										<div class="mySlides">
+											<div class="numbertext">9/9</div>
+											<img src="../Images/gallery9.jpg" style="width:80%">
+										</div>
+									</div>
+
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+									<div class="caption-container">
+										<p id="caption"></p>
+									</div>
+
+									<div class="column">
+										<img class="gallery" src="../Images/gallery1.jpg" onclick="currentSlide(1)" alt="Image1">
+									</div>
+									<div class="column">
+										<img class="gallery" src="../Images/gallery2.jpg" onclick="currentSlide(2)" alt="Image2">
+									</div>
+									<div class="column">
+										<img class="gallery" src="../Images/gallery3.jpg" onclick="currentSlide(3)" alt="Image3">
+									</div>
+									<div class="column">
+										<img class="gallery" src="../Images/gallery4.jpg" onclick="currentSlide(4)" alt="Image4">
+									</div>
+									<div class="column">
+										<img class="gallery" src="../Images/gallery5.jpg" onclick="currentSlide(5)" alt="Image5">
+									</div>
+									<div class="column">
+										<img class="gallery" src="../Images/gallery6.jpg" onclick="currentSlide(6)" alt="Image6">
+									</div>
+									<div class="column">
+										<img class="gallery" src="../Images/gallery7.jpg" onclick="currentSlide(7)" alt="Image7">
+									</div>
+									<div class="column">
+										<img class="gallery" src="../Images/gallery8.jpg" onclick="currentSlide(8)" alt="Image8">
+									</div>
+									<div class="column">
+										<img class="gallery" src="../Images/gallery9.jpg" onclick="currentSlide(9)" alt="Image9">
+									</div>
+								</div>
+							<div id="video" class="tab-pane fade">
+								<p>Video goes here</p>
+							</div>
+						</div>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+		<footer class="col-12">
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
+			<a href="https://twitter.com/" class="fa fa-twitter"></a>
+		</footer>
+
+		<script>
+			function openModal(){
+				document.getElementById('modal1').style.display = "block";
+			}
+			function closeModal(){
+				document.getElementById('modal1').style.display = "none";
+			}
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n){
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("gallery");
+				var captionText = document.getElementById("caption");
+				if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block";
+						dots[slideIndex-1].className += " active";
+						captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+	</body>
+</html>
