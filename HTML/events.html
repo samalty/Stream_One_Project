@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Blasé Music Club home page</title>
+		<title>Blasé Music Club events page</title>
 		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/Bootstrap/css/bootstrap.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Contrail+One|Fjalla+One|Francois+One|Indie+Flower|Rammetto+One|Roboto+Mono|VT323" rel="stylesheet">
 		<script src="C:/Users/Sam/Stream_One_Project/jQuery/js/jquery-3.2.1.js"></script>
 		<script src="C:/Users/Sam/Stream_One_Project/Bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="C:/Users/Sam/Stream_One_Project/Javascript/customjs.js"></script>
 		<style>
 			footer{
 				padding-top: 10px;
@@ -17,7 +18,7 @@
 				width: 100%;
 			}
 			.jumbotron{
-				background-image: url("C:/Users/Sam/Stream_One_Project/Images/cover4.jpg");
+				background-image: url("../Images/cover4.jpg");
 				background-size: cover;
 				color: white;
 				height: 400px;
@@ -45,16 +46,11 @@
 			.fa-hover{
 				opacity: 0.6;
 			}
-			#accordion{
-				font-family: Gill Sans Extrabold, sans-serif;
-  				font-size: 20px;
-  				line-height: 1.42857143;
-  				color: #434549;
-  				background-color: #ced6e5;
-  				text-align: center;
-			}
 			h1{
-				font-family: Contrail One, cursive;
+				font-family: VT323, monospace;
+				font-size: 50px;
+				font-weight: bolder;
+				margin-bottom: 30px;
 			}
 			p{
 				font-family: Contrail One, cursive;
@@ -68,13 +64,29 @@
 				font-family: VT323, monospace;
   				font-size: 40px;
 			}
-			#accordion{
-				margin-top: 50px;
-				margin-bottom: 50px;
-			}
 			#carousel1{
 				margin-top: 50px;
 				margin-bottom: 50px;
+			}
+			#button_1{
+				margin-top: 50px;
+			}
+			#para_2{
+				display: none;
+			}
+			#para_3{
+				display: none;
+				margin-bottom: 50px;
+			}
+			.btn{
+				margin: 5px;
+				width: 500px;
+				font-family: Contrail One, cursive;
+  				font-size: 35px;
+  				font-weight: bold;
+			}
+			.para_container{
+				text-align: left;
 			}
 		</style>
 	</head>
@@ -90,11 +102,10 @@
 				</button>
 			</div>
 			<ul id="myCollapsingList" class="nav navbar-nav navbar-right collapse navbar-collapse">
-				<li><a href="home.html">Home</a></li>
-				<li><a href="#">Tell me more</a></li>
-				<li><a href="media.html">Media</a></li>
-				<li><a href="#">Upcoming events</a></li>
-				<li><a href="contact.html">Get in touch</a></li>
+				<li><a id="home" href="home.html">Home</a></li>
+				<li><a id="media" href="media.html">Media</a></li>
+				<li><a id="events" href="#">Upcoming events</a></li>
+				<li><a id="contact" href="contact.html">Get in touch</a></li>
 			</ul>
 			</div>
 		</nav>
@@ -108,106 +119,85 @@
 				<div class="col-12">
 					<h1>What's on at Blasé Music Club?</h1>
 					<p>Join us on 27th May Bank Holiday Weekend as we present a day of idiosyncratic musical performances, art installations and DJ sets in the great arches of Kachette, Shoreditch.</p>
-					<p>Two dance floors, afrobeat, spicy jazz & bare disco.</p>
+					<p>Two dance floors, afrobeat, jazz & disco.</p>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-6">
-					<div class="panel-group" id="accordion">
-    					<div class="panel panel-default">
-        					<div class="panel-heading">
-            					<h3 class="panel-title">
-                				<a data-target="#panel1" data-toggle="collapse" data-parent="#accordion" href="#panel1">Information</a>
-            					</h3>
-        					</div>
-        					<div class="panel-collapse collapse" id="panel1">
-            					<div class="panel-body">
-                				<p><b>Venue</b></p> 
-                				<p>Kachette, 347 Old St, London EC1V 9LP.</p>
-								<p><b>Travel</b></p> 
-								<p>Nearest tube and train stations are: Old Street (Northern Line), Liverpool Street (Central, Circle, Hammersmith & City and Metropolitan line), Shoreditch High Street station Overground.</p>
-								<p>There are buses running from Liverpool Street Station to the venue as well as from Old Street, otherwise it's a short walk from either.</p>
-								<p><b>Tickets</b></p>
-								<p>Tickets can be purchased online via the following link: XXXXX</p>
-            					</div>
-        					</div>
-    					</div>
-    					<div class="panel panel-default">
-    						<div class="panel-heading">
-    							<h3 class="panel-title">
-    							<a data-target="#panel2" data-toggle="collapse" data-parent="#accordion" href="#panel2">Line-up</a>
-    							</h3>
-    						</div>
-    						<div class="panel-collapse collapse" id="panel2">
-    							<div class="panel-body">
-    							<p><b>Mo Kolours</b></p>
-								<p>Anglo-Mauritian producer, singer and percussionist Joseph Deenmamode, aka Mo Kolours, effortlessly weaves Hip hop, dub, soul and other electronic iterations to create tasty Erykah Badu & Theo Parish-esque grooves.</p>
-								<p>https://mokolours.bandcamp.com/<p>
-								<p><b>Wu-Lu</b></p>
-								<p>South London multi-instrumentalist & producer Wu-Lu joins us with his full band line-up, having drawn our attention with his jazz driven work with SAMPLED a few years ago.</p>
-								<p>https://soundcloud.com/wu-lu</p>
-								<p><b>Penya</b></p>
-								<p>Gilles Peterson recently named this 5 piece on BB6 Music as one of the 6 acts he's buzzing about and for good reason. Penya bring mighty afro-cuban grooves hot off the release of their sensational Super Liminal LP.</p>
-								<p>https://onthecornerrecords.bandcamp.com/album/super-liminal</p>
-								<p><b>ENGINE</b></p>
-								<p>ENGINE have built upon a live reputation which includes supports for Connan Mockasin, Infinite Bisous and C Duncan. The band have received plenty of radio play from BBC, Radio X, NTS and more.</p>
-								<p>https://soundcloud.com/the-engine-1<p>
-								<p><b>ATHOS</b></p>
-								<p>With a strong emphasis on improvisation, Athos' ‘Alternative Folk’ sound is quietly developing its clasps, into a force to be reckoned with.</p>
-								<p>https://soundcloud.com/athosband</p>
-								<p><b>//// DJ'S ////</b></p>
-								<p>Disco, spicy house and all sorts brought to you by:</p>
-								<p>Aaron L & Yoshi (Stamp The Wax)</p>
-								<p>Jackson</p>
-								<p>Juan87</p>
-								<p>Keith Lorraine</p>
-								<p>momo</p>
-								<p>Nick Hadfield</p>
-								<p>Stepping into Tomorrow</p>
-								<p>Tech Support DJ</p>
-                				</div>
-                			</div>
-                		</div>
-                		<div class="panel panel-default">
-    						<div class="panel-heading">
-    							<h3 class="panel-title">
-    							<a data-target="#panel3" data-toggle="collapse" data-parent="#accordion" href="#panel3">Grub</a>
-    							</h3>
-    						</div>
-    						<div class="panel-collapse collapse" id="panel3">
-    							<div class="panel-body">
-    							<p><b>Food Junkee</b></p>
-    							<p>Food Junkee will be on hand to supplement the party vibes and (fingers crossed) sunny weather with its fine variety of afro-carribean cuisine, including jerk chicken bagels and patties.</p>
-    							<p><b>Lucky Aces</b></p>
-    							<p>Chargrilled treats come courtesy of Lucky Aces, who will be sharing with us a hand crafted menu of barbeque delights and vegetarian specials</p>
-                				</div>
-                			</div>
-                		</div>
-					</div>
+                	<button type="button" class="btn btn-default btn-lg" id="button_1">Information</button>
+                	<div class="para_container" id="para_1">
+                		<p><b>Venue</b></p>
+                		<p>Kachette, 347 Old St, London EC1V 9LP.</p>
+						<p><b>Travel</b></p> 
+						<p>Nearest tube and train stations are: Old Street (Northern Line), Liverpool Street (Central, Circle, Hammersmith & City and Metropolitan line), Shoreditch High Street station Overground.</p>
+						<p>There are buses running from Liverpool Street Station to the venue as well as from Old Street, otherwise it's a short walk from either.</p>
+						<p><b>Tickets</b></p>
+						<p>Tickets can be purchased online via the following link: XXXXX</p>
+                	</div>
+                	<button type="button" class="btn btn-default btn-lg" id="button_2">Line-up</button>
+                	<div class="para_container" id="para_2">
+                		<p><b>Mo Kolours</b></p>
+                		<p>Anglo-Mauritian producer, singer and percussionist Joseph Deenmamode, aka Mo Kolours, effortlessly weaves Hip hop, dub, soul and other electronic iterations to create tasty Erykah Badu & Theo Parish-esque grooves.</p>
+						<p>https://mokolours.bandcamp.com/<p>
+						<p><b>Wu-Lu</b></p>
+						<p>South London multi-instrumentalist & producer Wu-Lu joins us with his full band line-up, having drawn our attention with his jazz driven work with SAMPLED a few years ago.</p>
+						<p>https://soundcloud.com/wu-lu</p>
+						<p><b>Penya</b></p>
+						<p>Gilles Peterson recently named this 5 piece on BB6 Music as one of the 6 acts he's buzzing about and for good reason. Penya bring mighty afro-cuban grooves hot off the release of their sensational Super Liminal LP.</p>								
+						<p>https://onthecornerrecords.bandcamp.com/album/super-liminal</p>
+						<p><b>ENGINE</b></p>
+						<p>ENGINE have built upon a live reputation which includes supports for Connan Mockasin, Infinite Bisous and C Duncan. The band have received plenty of radio play from BBC, Radio X, NTS and more.</p>
+						<p>https://soundcloud.com/the-engine-1<p>
+						<p><b>ATHOS</b></p>
+						<p>With a strong emphasis on improvisation, Athos' ‘Alternative Folk’ sound is quietly developing its clasps, into a force to be reckoned with.</p>
+						<p>https://soundcloud.com/athosband</p>
+						<p><b>//// DJ'S ////</b></p>
+						<p>Disco, house and all sorts brought to you by:</p>
+						<p>Aaron L & Yoshi (Stamp The Wax)</p>
+						<p>Jackson</p>
+						<p>Juan87</p>
+						<p>Keith Lorraine</p>
+						<p>momo</p>
+						<p>Nick Hadfield</p>
+						<p>Stepping into Tomorrow</p>
+						<p>Tech Support DJ</p>
+                	</div>
+                	<button type="button" class="btn btn-default btn-lg" id="button_3">Grub</button>
+                	<div class="para_container" id="para_3">
+                		<p><b>Food Junkee</b></p>
+    					<p>Food Junkee will be on hand to supplement the party vibes and (fingers crossed) sunny weather with its fine variety of afro-carribean cuisine, including jerk chicken bagels and patties.</p>
+    					<p><b>Lucky Aces</b></p>
+    					<p>Chargrilled treats come courtesy of Lucky Aces, who will be sharing with us a hand crafted menu of barbeque delights and vegetarian specials.</p>
+                	</div>
 				</div>
+
+
+				<!-- Carousel -->
+
+
 				<div class="col-sm-12 col-md-6">
-					<div id="carousel1" class="carousel slide" data-ride="carousel">
+					<div id="carousel1" class="carousel slide">
 						<ol class="carousel-indicators">
-							<li data-target="#carousel1" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel1" data-slide-to="0" id="" class="active"></li>
 							<li data-target="#carousel1" data-slide-to="1"></li>
 							<li data-target="#carousel1" data-slide-to="2"></li>
 						</ol>
 						<div class="carousel-inner">
-							<div class="item active">
+							<div class="item active" id="img1">
 								<img src="../Images/logo.jpg" height="500" style="width:100%" alt="Blasé Music Club">
 								<div class="carousel-caption">
 									<p>Blasé Music Club</p>
 								</div>
 							</div>
-							<div class="item">
+							<div class="item" id="img2">
 								<img src="../Images/logo.jpg" height="500" style="width:100%" alt="Text">
 								<div class="carousel-caption">
 									<p>Text1</p>
 								</div>
 							</div>
-							<div class="item">
+							<div class="item" id="img3">
 								<img src="../Images/tower.jpg" height="500" style="width:100%" alt="Text2">
 								<div class="carousel-caption">
 									<p>Text2</p>
