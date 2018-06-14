@@ -6,96 +6,30 @@
 		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/Bootstrap/css/bootstrap.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Contrail+One|Fjalla+One|Francois+One|Indie+Flower|Rammetto+One|Roboto+Mono|VT323" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/CSS/custom.css">
 		<script src="C:/Users/Sam/Stream_One_Project/jQuery/js/jquery-3.2.1.js"></script>
 		<script src="C:/Users/Sam/Stream_One_Project/Bootstrap/js/bootstrap.js"></script>
 		<script type="text/javascript" src="C:/Users/Sam/Stream_One_Project/Javascript/customjs.js"></script>
 		<style>
-			footer{
-				padding-top: 10px;
-				background-color: #bac9e2;
-				text-align: center;
-				height: 100px;
-				width: 100%;
-			}
 			.jumbotron{
 				background-image: url("../Images/cover4.jpg");
 				background-size: cover;
 				color: white;
 				height: 400px;
-			}
-			.fa{
-				padding: 20px;
-				font-size: 35px;
-				width: 70px;
-				text-align: center;
-				text-decoration: none;
-				border-radius: 30%;
-			}
-			.fa-facebook{
-				background: #3B5998;
-				color: white;
-			}
-			.fa-instagram{
-				background: #E03A77;
-				color: white;
-			}
-			.fa-twitter{
-				background: #55ACEE;
-				color: white;
-			}
-			.fa-hover{
-				opacity: 0.6;
-			}
-			h1{
-				font-family: VT323, monospace;
-				font-size: 50px;
-				font-weight: bolder;
-				margin-bottom: 30px;
-			}
-			p{
-				font-family: Contrail One, cursive;
-  				font-size: 20px;
-			}
-			a{
-				font-family: Contrail One, cursive;
-  				font-size: 20px;
-			}
-			.navbar-brand{
-				font-family: VT323, monospace;
-  				font-size: 40px;
-			}
-			#carousel1{
-				margin-top: 50px;
-				margin-bottom: 50px;
-			}
-			#button_1{
-				margin-top: 50px;
-			}
-			#para_2{
-				display: none;
-			}
-			#para_3{
-				display: none;
-				margin-bottom: 50px;
-			}
-			.btn{
-				margin: 5px;
-				width: 500px;
-				font-family: Contrail One, cursive;
-  				font-size: 35px;
-  				font-weight: bold;
-			}
-			.para_container{
-				text-align: left;
+				margin-top: 39px;
 			}
 		</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-fixed-top">
+
+		<!-- Navbar -->
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 			<div class="nav navbar-header">
 				<a class="navbar-brand" href="C:/Users/Sam/Stream_One_Project/HTML/home.html">Blasé Music Club</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -110,22 +44,31 @@
 			</div>
 		</nav>
 		<hr>
+
+		<!-- Jumbotron -->
+
 		<div class="jumbotron">
 			<div class="container">
 			</div>
 		</div>
+
+		<!-- Header -->
+
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<header class="col-12">
 					<h1>What's on at Blasé Music Club?</h1>
 					<p>Join us on 27th May Bank Holiday Weekend as we present a day of idiosyncratic musical performances, art installations and DJ sets in the great arches of Kachette, Shoreditch.</p>
 					<p>Two dance floors, afrobeat, jazz & disco.</p>
-				</div>
+				</header>
 			</div>
 		</div>
+
+		<!-- Toggle info buttons -->
+
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-6">
+				<section class="col-sm-12 col-md-6">
                 	<button type="button" class="btn btn-default btn-lg" id="button_1">Information</button>
                 	<div class="para_container" id="para_1">
                 		<p><b>Venue</b></p>
@@ -134,25 +77,25 @@
 						<p>Nearest tube and train stations are: Old Street (Northern Line), Liverpool Street (Central, Circle, Hammersmith & City and Metropolitan line), Shoreditch High Street station Overground.</p>
 						<p>There are buses running from Liverpool Street Station to the venue as well as from Old Street, otherwise it's a short walk from either.</p>
 						<p><b>Tickets</b></p>
-						<p>Tickets can be purchased online via the following link: XXXXX</p>
+						<p>Tickets can be purchased online via <a href="http://www.blasemusicclub.com/tickets.html" target="_blank">this link</a>.</p>
                 	</div>
                 	<button type="button" class="btn btn-default btn-lg" id="button_2">Line-up</button>
                 	<div class="para_container" id="para_2">
                 		<p><b>Mo Kolours</b></p>
                 		<p>Anglo-Mauritian producer, singer and percussionist Joseph Deenmamode, aka Mo Kolours, effortlessly weaves Hip hop, dub, soul and other electronic iterations to create tasty Erykah Badu & Theo Parish-esque grooves.</p>
-						<p>https://mokolours.bandcamp.com/<p>
+						<p><a href="https://mokolours.bandcamp.com" target="_blank">Listen here</a><p>
 						<p><b>Wu-Lu</b></p>
 						<p>South London multi-instrumentalist & producer Wu-Lu joins us with his full band line-up, having drawn our attention with his jazz driven work with SAMPLED a few years ago.</p>
-						<p>https://soundcloud.com/wu-lu</p>
+						<p><a href="https://soundcloud.com/wu-lu" target="_blank">Listen here</a></p>
 						<p><b>Penya</b></p>
 						<p>Gilles Peterson recently named this 5 piece on BB6 Music as one of the 6 acts he's buzzing about and for good reason. Penya bring mighty afro-cuban grooves hot off the release of their sensational Super Liminal LP.</p>								
-						<p>https://onthecornerrecords.bandcamp.com/album/super-liminal</p>
+						<p><a href="https://onthecornerrecords.bandcamp.com/album/super-liminal" target="_blank">Listen here</a></p>
 						<p><b>ENGINE</b></p>
 						<p>ENGINE have built upon a live reputation which includes supports for Connan Mockasin, Infinite Bisous and C Duncan. The band have received plenty of radio play from BBC, Radio X, NTS and more.</p>
-						<p>https://soundcloud.com/the-engine-1<p>
+						<p><a href="https://soundcloud.com/the-engine-1" target="_blank">Listen here</a></p>
 						<p><b>ATHOS</b></p>
 						<p>With a strong emphasis on improvisation, Athos' ‘Alternative Folk’ sound is quietly developing its clasps, into a force to be reckoned with.</p>
-						<p>https://soundcloud.com/athosband</p>
+						<p><a href="https://soundcloud.com/athosband" target="_blank">Listen here</a></p>
 						<p><b>//// DJ'S ////</b></p>
 						<p>Disco, house and all sorts brought to you by:</p>
 						<p>Aaron L & Yoshi (Stamp The Wax)</p>
@@ -167,18 +110,16 @@
                 	<button type="button" class="btn btn-default btn-lg" id="button_3">Grub</button>
                 	<div class="para_container" id="para_3">
                 		<p><b>Food Junkee</b></p>
-    					<p>Food Junkee will be on hand to supplement the party vibes and (fingers crossed) sunny weather with its fine variety of afro-carribean cuisine, including jerk chicken bagels and patties.</p>
+    					<p><a href="http://foodjunkee.co.uk" target="_blank">Food Junkee</a> will be on hand to supplement the party vibes and (fingers crossed) sunny weather with its fine variety of afro-carribean cuisine, including jerk chicken bagels and patties.</p>
     					<p><b>Lucky Aces</b></p>
     					<p>Chargrilled treats come courtesy of Lucky Aces, who will be sharing with us a hand crafted menu of barbeque delights and vegetarian specials.</p>
                 	</div>
-				</div>
-
+				</section>
 
 				<!-- Carousel -->
 
-
-				<div class="col-sm-12 col-md-6">
-					<div id="carousel1" class="carousel slide">
+				<section class="col-sm-12 col-md-6">
+					<div id="carousel1" class="carousel slide" data-interval="false">
 						<ol class="carousel-indicators">
 							<li data-target="#carousel1" data-slide-to="0" id="" class="active"></li>
 							<li data-target="#carousel1" data-slide-to="1"></li>
@@ -187,35 +128,27 @@
 						<div class="carousel-inner">
 							<div class="item active" id="img1">
 								<img src="../Images/logo.jpg" height="500" style="width:100%" alt="Blasé Music Club">
-								<div class="carousel-caption">
-									<p>Blasé Music Club</p>
-								</div>
 							</div>
 							<div class="item" id="img2">
-								<img src="../Images/logo.jpg" height="500" style="width:100%" alt="Text">
+								<img src="../Images/lineup.jpg" height="500" style="width:100%" alt="Text">
 								<div class="carousel-caption">
-									<p>Text1</p>
+									<p>ENGINE make up part of the Bank Holiday Weekend line-up</p>
 								</div>
 							</div>
 							<div class="item" id="img3">
-								<img src="../Images/tower.jpg" height="500" style="width:100%" alt="Text2">
+								<img src="../Images/foodjunkee.jpg" height="500" style="width:100%" alt="Text2">
 								<div class="carousel-caption">
-									<p>Text2</p>
+									<p>Jerk chicken, courtesy of Food Junkee</p>
 								</div>
 							</div>
 						</div>
-						<a class="left carousel-control" href="#carousel1" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#carousel1" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
-							<span class="sr-only">Next</span>
-						</a>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div>
+
+		<!-- Footer -->
+
 		<footer class="col-12">
 			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
 			<a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>

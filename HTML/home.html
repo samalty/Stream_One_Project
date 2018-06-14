@@ -6,127 +6,23 @@
 		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/Bootstrap/css/bootstrap.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Contrail+One|Fjalla+One|Francois+One|Indie+Flower|Rammetto+One|Roboto+Mono|VT323" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/CSS/custom.css">
 		<script src="C:/Users/Sam/Stream_One_Project/jQuery/js/jquery-3.2.1.js"></script>
 		<script src="C:/Users/Sam/Stream_One_Project/Bootstrap/js/bootstrap.js"></script>
 		<script type="text/javascript" src="C:/Users/Sam/Stream_One_Project/Javascript/customjs.js"></script>
 		<style>
-			/* Carousel CSS */
-
-			.carousel{
-				margin-bottom: 50px;
-			}
-			.carousel .container{
-				position: relative;
-				z-index: 9;
-			}
-			.carousel-control{
-				margin-top: 0px;
-				font-size: 25px;
-				background-color: transparent;
-				text-shadow: 0;
-				border: 0;
-				z-index: 10;
-			}
-			.carousel .item{
-				height: 600px;
-			}
-			.carousel img{
-				position: absolute;
-				top: 0;
-				left: 0;
-				min-width: 100%;
-				min-height: 200px;
-				max-height: 600px;
-			}
-
-			/* General CSS */
-
-			h1{
-				font-family: VT323, monospace;
-				font-size: 50px;
-				font-weight: bolder;
-				margin-bottom: 30px;
-			}
-			p{
-				font-family: Contrail One, cursive;
-  				font-size: 20px;
-  				margin-bottom: 30px;
-			}
-			a{
-				font-family: Contrail One, cursive;
-  				font-size: 20px;
-			}
-			.navbar-brand{
-				font-family: VT323, monospace;
-  				font-size: 40px;
-			}
-			.btn{
-				font-family: Contrail One, cursive;
-  				font-size: 35px;
-  				font-weight: bold;
-  				margin-top: 30px;
-  				margin-bottom: 30px;
-			}
-			#para{
-				display: none;
-			}
-			audio{
-				display: block;
-				height: 100px;
-				width: 500px;
-				align-self: center;
-			}
-			.audioCenter{
-				margin: 10px auto;
-				width: 500px;
-			}
-
-			/* Social media icons CSS */
-
-			.fa{
-				padding: 20px;
-				font-size: 35px;
-				width: 70px;
-				text-align: center;
-				text-decoration: none;
-				border-radius: 30%;
-			}
-			.fa-facebook{
-				background: #3B5998;
-				color: white;
-			}
-			.fa-instagram{
-				background: #E03A77;
-				color: white;
-			}
-			.fa-twitter{
-				background: #55ACEE;
-				color: white;
-			}
-			.fa-hover{
-				opacity: 0.6;
-			}
-
-			/* Footer CSS */
-
-			footer{
-				padding-top: 10px;
-				background-color: #bac9e2;
-				text-align: center;
-				height: 100px;
-				width: 100%;
-			}
 		</style>
 	</head>
 	<body>
 
 		<!-- Navbar -->
 
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 			<div class="nav navbar-header">
 				<a class="navbar-brand" href="#">Blasé Music Club</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
+					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -140,9 +36,6 @@
 			</ul>
 			</div>
 		</nav>
-
-		<!-- Navbar end -->
-
 		<hr>
 
 		<!-- Carousel -->
@@ -155,12 +48,11 @@
 				<div class="carousel-inner">
 					<div class="item active" id="cover1">
 						<img src="../Images/cover1.jpg" height="700" style="width:100%" alt="cover1">
-						<div class="carousel-caption">
-						</div>
 					</div>
 					<div class="item" id="cover2">
 						<img src="../Images/cover2.jpg" height="700" style="width:100%" alt="cover2">
 						<div class="carousel-caption">
+							<a href="events.html" class="btn btn-success btn-sm pull-left" role="button" id="carouselButton" target="_blank">Info and tickets</a>
 						</div>
 					</div>
 				</div>
@@ -174,34 +66,57 @@
 				</a>
 			</div>	
 
-		<!-- Carousel end -->
+		<!-- Header -->
 
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<h1>Welcome to Blasé Music Club</h1>
-					<p>A collaboration of opportunistic minds and enigmatic souls, honouring all that is great about experimental performance and the beauty of the ephemeral.</p>
-				</div>
+				<header class="col-12">
+					<img src="../Images/logo2.jpg" width="60%" height="60%" id="logoImg">
+					<h2>A collaboration of opportunistic minds and enigmatic souls, honouring all that is great about experimental performance and the beauty of the ephemeral.</h2>
+				</header>
 			</div>
+
+			<!-- Audio -->
+
 			<div class="row">
 				<div class="col-12">
-					<div class="container-fluid audioCenter">
+					<section class="container-fluid audioCenter">
 						<audio controls="controls" autoplay="autoplay" loop="loop" align="middle">
 							<source src="../MP3/Mo Kolours - Version Like Sun - 04 Daylight.mp3" autoplay="autoplay" type="audio/mpeg; codecs=mp3"/>
 							<source src="../MP3/Mo_Kolours_-_Version_Like_Sun_-_04_Daylight" autoplay="autoplay" type="audio/wav; codecs=vorbis"/>
 						</audio>
-					</div>
+					</section>
 				</div>
 			</div>
+
+			<!-- Dropdown button -->
+
 			<div class="row">
-				<div class="col-12">
-					<button type="button" class="btn btn-default btn-lg" id="myButton">Find out more</button>
+				<div class="col-12"">
+					<button type="button" class="btn btn-default btn-lg" id="myButton">What's up next?</button>
                 	<div class="para_container" id="para">
-                		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac tortor ac mauris pellentesque mattis. Cras eget neque lectus. Nulla at neque consectetur, iaculis sapien a, aliquet lacus. Curabitur et turpis gravida nunc eleifend volutpat. Etiam fermentum, dui tempor blandit tristique, urna dui laoreet nibh, at ullamcorper eros massa sit amet nunc. Sed sit amet nisl libero. Etiam iaculis vel ipsum a faucibus. Pellentesque feugiat sem mattis urna consequat tincidunt. Etiam turpis lorem, bibendum sed augue vel, vulputate efficitur tellus. Fusce euismod justo libero, in cursus urna finibus sit amet. Etiam lacinia non neque et imperdiet. Maecenas pharetra tincidunt suscipit.</p>
+                		<div class="col-md-6 col-sm-12">
+                			<div class="thumbnail">
+                				<img src="../Images/art.jpg" class="img-responsive" id="dropdownImg" style="width:99%" height="500">
+                				<div class="caption">
+                					<p>3D art by Max Brazier-Jones will be on show on May 27th</p>
+                				</div>
+                			</div>
+                		</div>
+                		<div class="col-md-6 col-sm-12">
+                			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac tortor ac mauris pellentesque mattis. Cras eget neque lectus. Nulla at neque consectetur, iaculis sapien a, aliquet lacus. Curabitur et turpis gravida nunc eleifend volutpat.</p> 
+                			<p>Etiam fermentum, dui tempor blandit tristique, urna dui laoreet nibh, at ullamcorper eros massa sit amet nunc. Sed sit amet nisl libero. Etiam iaculis vel ipsum a faucibus.</p> 
+                			<p>Pellentesque feugiat sem mattis urna consequat tincidunt. Etiam turpis lorem, bibendum sed augue vel, vulputate efficitur tellus. Fusce euismod justo libero, in cursus urna finibus sit amet. Etiam lacinia non neque et imperdiet. Maecenas pharetra tincidunt suscipit.</p>
+                			<p>Nam sapien purus, suscipit ut condimentum sed, ornare id lectus. Maecenas a turpis ligula. Vivamus sodales risus vel nunc malesuada suscipit sit amet vitae libero. Etiam at dui neque. Vivamus et velit dapibus dui aliquam scelerisque. Morbi in ullamcorper mi. Ut eleifend tincidunt augue, ut maximus eros.</p>
+                			<a href="events.html" class="btn btn-success btn-sm" role="button" id="eventsButton" target="_blank">Join us!</a>
+                		</div>
                 	</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- Footer -->
+
 		<footer class="col-12">
 			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
 			<a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>

@@ -4,35 +4,33 @@
 
 ### What is this website for?
 
-This is a static website built to help promote Blasé Music Club.
+This is a static website built to help promote Blasé Music Club and its activities.
 
 ### What does it do?
 
-Users can access this website to familiarise themselves with Blasé Music Club, and stay up-to-date with the latest goings on. The website will share information about the club, details about upcoming events, and relevant media. It will also provide links to sites where users can purchase tickets, as well as Blasé Music Club's various social media platforms. The website will also include a contact page containing a form with validation.
+The primary aim of this website is to promote an upcoming event hosted by Blasé Music Club. Users can access this website to familiarise themselves with Blasé Music Club, and stay up-to-date with the latest goings on. The website will share information about the club, details about upcoming events, and relevant media. It will also provide links to sites where users can purchase tickets, as well as Blasé Music Club's various social media platforms. The website will also include a contact page containing a form with validation.
 
 ### How does it work?
 
-The site is to be styled using Bootstrap. It will incorporate custom JavaScript logic which will be contained in its own separate JS file.
+The site is styled using Bootstrap. It incorporates custom JavaScript logic which is contained in its own separate JS file.
 
 ## Features
 
 ### Existing features
-- None yet
-
-### Features left to implement
-- Image carousel which is responsive to interaction with an accordion panel
+- Image carousel which is responsive to interaction with separate buttons with their own slideToggle functions
 - Form with validation
+- Lightbox to display images in a gallery
 
 ## Tech Used
 
 ### Some of the tech used includes:
 
 - Bootstrap
-	- We use **Bootstrap** to give our project a simple, responsive layout
+	- We used **Bootstrap** to give our project a simple, responsive layout
 - JavaScript
-	- We use **JavaScript** to introduce interactive components to our website
+	- We used **JavaScript** to introduce interactive components to our website
 - jQuery
-	- We use **jQuery** to simplify our JavaScript code
+	- We used **jQuery** to simplify our JavaScript code
 
 ## Contributing
 
