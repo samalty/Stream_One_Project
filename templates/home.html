@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<meta charset="utf-8">
 		<title>Blasé Music Club home page</title>
-		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/Bootstrap/css/bootstrap.css"/>
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Contrail+One|Fjalla+One|Francois+One|Indie+Flower|Rammetto+One|Roboto+Mono|VT323" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/CSS/custom.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Ops+One|Contrail+One|Fjalla+One|Francois+One|Indie+Flower|Rammetto+One|Roboto+Mono|VT323">
+		<link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+		
+		<!-- Scripts -->
+		<script type="text/javascript" src="/static/js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="/static/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="/static/js/custom.js"></script>
+		
 	</head>
 	<body>
 
@@ -35,38 +44,35 @@
 
 		<!-- Carousel -->
 
-			<div id="myCarousel" class="carousel slide">
-				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" id="" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active" id="cover1">
-						<img src="../Images/cover1.jpg" height="700" style="width:100%" alt="cover1">
-					</div>
-					<div class="item" id="cover2">
-						<img src="../Images/cover2.jpg" height="700" style="width:100%" alt="cover2">
-						<div class="carousel-caption">
-							<a href="events.html" class="btn btn-success btn-sm pull-left" role="button" id="carouselButton" target="_blank">Info and tickets</a>
-						</div>
-					</div>
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" id="" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active" id="cover1">
+					<img src="/static/images/cover1.jpg" height="700" style="width:100%" alt="cover1">
 				</div>
-				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#myCarousel" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>	
+				<div class="item" id="cover2">
+					<img src="/static/images/cover2.jpg" height="700" style="width:100%" alt="cover2">
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>	
 
 		<!-- Header -->
 
 		<div class="container">
 			<div class="row">
 				<header class="col-12">
-					<img src="../Images/logo2.jpg" width="60%" height="60%" id="logoImg">
+					<img src="/static/images/logo2.jpg" width="60%" height="60%" id="logoImg">
 					<h2>A collaboration of opportunistic minds and enigmatic souls, honouring all that is great about experimental performance and the beauty of the ephemeral.</h2>
 				</header>
 			</div>
@@ -77,8 +83,8 @@
 				<div class="col-12">
 					<section class="container-fluid audioCenter">
 						<audio controls="controls" autoplay="autoplay" loop="loop" align="middle">
-							<source src="../MP3/Mo Kolours - Version Like Sun - 04 Daylight.mp3" autoplay="autoplay" type="audio/mpeg; codecs=mp3"/>
-							<source src="../MP3/Mo_Kolours_-_Version_Like_Sun_-_04_Daylight" autoplay="autoplay" type="audio/wav; codecs=vorbis"/>
+							<source src="/static/audio/Mo Kolours - Version Like Sun - 04 Daylight.mp3" autoplay="autoplay" type="audio/mpeg; codecs=mp3"/>
+							<source src="/static/audio/Mo_Kolours_-_Version_Like_Sun_-_04_Daylight" autoplay="autoplay" type="audio/wav; codecs=vorbis"/>
 						</audio>
 					</section>
 				</div>
@@ -87,12 +93,12 @@
 			<!-- Dropdown button -->
 
 			<div class="row">
-				<div class="col-12"">
+				<div class="col-12">
 					<button type="button" class="btn btn-default btn-lg" id="myButton">What's up next?</button>
                 	<div class="para_container" id="para">
                 		<div class="col-md-6 col-sm-12">
                 			<div class="thumbnail">
-                				<img src="../Images/art.jpg" class="img-responsive" id="dropdownImg" style="width:99%" height="500">
+                				<img src="/static/images/art.jpg" class="img-responsive" id="dropdownImg" style="width:99%" height="500">
                 				<div class="caption">
                 					<p>3D art by Max Brazier-Jones will be on show on May 27th</p>
                 				</div>
@@ -108,6 +114,7 @@
                 	</div>
 				</div>
 			</div>
+			
 		</div>
 
 		<!-- Footer -->
@@ -117,10 +124,6 @@
 			<a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
 			<a href="https://twitter.com/" class="fa fa-twitter"></a>
 		</footer>
-
-		<script src="C:/Users/Sam/Stream_One_Project/jQuery/js/jquery-3.2.1.js"></script>
-		<script src="C:/Users/Sam/Stream_One_Project/Bootstrap/js/bootstrap.js"></script>
-		<script type="text/javascript" src="C:/Users/Sam/Stream_One_Project/Javascript/customjs.js"></script>
 
 	</body>
 </html>

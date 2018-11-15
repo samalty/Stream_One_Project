@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		
 		<meta charset="utf-8">
 		<title>Blasé Music Club events page</title>
-		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/Bootstrap/css/bootstrap.css"/>
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Contrail+One|Fjalla+One|Francois+One|Indie+Flower|Rammetto+One|Roboto+Mono|VT323" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="C:/Users/Sam/Stream_One_Project/CSS/custom.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Ops+One|Contrail+One|Fjalla+One|Francois+One|Indie+Flower|Rammetto+One|Roboto+Mono|VT323">
+		<link rel="stylesheet" type="text/css" href="/static/css/custom.css">
+		
+		<!-- Scripts -->
+		<script type="text/javascript" src="/static/js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="/static/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="/static/js/custom.js"></script>
+		
 		<style>
 			.jumbotron{
-				background-image: url("../Images/cover4.jpg");
+				background-image: url("/static/images/cover4.jpg");
 				background-size: cover;
 				color: white;
 				height: 400px;
 				margin-top: 39px;
 			}
 		</style>
+		
 	</head>
 	<body>
 
@@ -24,7 +34,7 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
 			<div class="nav navbar-header">
-				<a class="navbar-brand" href="C:/Users/Sam/Stream_One_Project/HTML/home.html">Blasé Music Club</a>
+				<a class="navbar-brand" href="home.html">Blasé Music Club</a>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapsingList">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -44,14 +54,12 @@
 
 		<!-- Jumbotron -->
 
-		<div class="jumbotron">
-			<div class="container">
-			</div>
-		</div>
-
-		<!-- Header -->
-
+		<div class="jumbotron"></div>
+		
 		<div class="container">
+
+			<!-- Header -->
+
 			<div class="row">
 				<header class="col-12">
 					<h1>What's on at Blasé Music Club?</h1>
@@ -59,11 +67,9 @@
 					<p>Two dance floors, afrobeat, jazz & disco.</p>
 				</header>
 			</div>
-		</div>
 
-		<!-- Toggle info buttons -->
+			<!-- Toggle info buttons -->
 
-		<div class="container">
 			<div class="row">
 				<section class="col-sm-12 col-md-6">
                 	<button type="button" class="btn btn-default btn-lg" id="button_1">Information</button>
@@ -124,16 +130,16 @@
 						</ol>
 						<div class="carousel-inner">
 							<div class="item active" id="img1">
-								<img src="../Images/logo.jpg" height="500" style="width:100%" alt="Blasé Music Club">
+								<img src="/static/images/logo.jpg" height="500" style="width:100%" alt="Blasé Music Club">
 							</div>
 							<div class="item" id="img2">
-								<img src="../Images/lineup.jpg" height="500" style="width:100%" alt="Text">
+								<img src="/static/images/lineup.jpg" height="500" style="width:100%" alt="Text">
 								<div class="carousel-caption">
 									<p>ENGINE make up part of the Bank Holiday Weekend line-up</p>
 								</div>
 							</div>
 							<div class="item" id="img3">
-								<img src="../Images/foodjunkee.jpg" height="500" style="width:100%" alt="Text2">
+								<img src="/static/images/foodjunkee.jpg" height="500" style="width:100%" alt="Text2">
 								<div class="carousel-caption">
 									<p>Jerk chicken, courtesy of Food Junkee</p>
 								</div>
@@ -141,6 +147,7 @@
 						</div>
 					</div>
 				</section>
+				
 			</div>
 		</div>
 
@@ -151,10 +158,6 @@
 			<a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
 			<a href="https://twitter.com/" class="fa fa-twitter"></a>
 		</footer>
-
-		<script src="C:/Users/Sam/Stream_One_Project/jQuery/js/jquery-3.2.1.js"></script>
-		<script src="C:/Users/Sam/Stream_One_Project/Bootstrap/js/bootstrap.js"></script>
-		<script type="text/javascript" src="C:/Users/Sam/Stream_One_Project/Javascript/customjs.js"></script>
 
 	</body>
 </html>
