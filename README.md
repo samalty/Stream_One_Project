@@ -91,8 +91,13 @@ customSpec.js file to overcome this problem.
 
 ## Deployment
 
-This application has been both pushed to Github and deployed to Heroku. Config variables have been added to the Heroku dashboard to 
-ensure that the application works. There are no differences between the deployed version and the development version stored on Github.
+To launch this project:
+
+1. Click the 'clone or download' button near the top of the page and copy the link
+2. Go into Cloud9 and create a new workspace
+3. Within this workspace, paste the link in the space labelled 'clone from Git or Mercurial URL', before selecting a blank template
+4. Once the project has been cloned, open any of the HTML files in the workspace and press the 'run' button at the top of the page
+5. Click the hyperlink that will appear in the bash terminal upon running the project
 
 ## Credits
 
