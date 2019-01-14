@@ -99,7 +99,7 @@ To launch this project:
 4. Once the project has been cloned, open any of the HTML files in the workspace and press the 'run' button at the top of the page
 5. Click the hyperlink that will appear in the bash terminal upon running the project
 
-This website is also live at: https://samalty.github.io/weather-query-application/
+This website is also live at: =https://samalty.github.io/Stream_One_Project/
 
 ## Credits
 
